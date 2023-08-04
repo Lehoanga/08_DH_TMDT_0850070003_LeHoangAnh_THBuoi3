@@ -8,6 +8,7 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      alignment: Alignment.center,
       margin: const EdgeInsets.all(20),
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
@@ -21,7 +22,8 @@ class CustomAppBar extends StatelessWidget {
           ),
         ],
       ),
-      child: Row(
+      child: Wrap(
+        alignment: WrapAlignment.center,
         children: <Widget>[
           Image.asset(
             "assets/images/logo.png",
